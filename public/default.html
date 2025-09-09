@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Default</title>
+        <!-- Importing Material Components Web -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
+        <script type="importmap">
+            {
+                "imports": {
+                    "@material/web/": "https://esm.run/@material/web/"
+                }
+            }
+        </script>
+        <script type="module">
+            import '@material/web/all.js';
+            import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+            document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+        </script>
+        <script type="text/javascript" src="./assets/js/moments.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="./assets/css/nonresponsive-main.css" />
+        <link rel="stylesheet" href="./assets/css/nonresponsive-progress-expand.css" />
+        <style>
+            :root {
+                --text-xs: 0.75rem;
+                --text-sm: 0.875rem;
+                --text-base: 1rem;
+                --text-lg: 1.125rem;
+                --text-xl: 1.25rem;
+            }
+
+            /* Extra small devices (phones, 600px and down) */
+            @media only screen and (max-width: 600px) {
+                body {
+                    background: oklch(88.5% 0.062 18.334);
+                }
+                .text-xs {
+                    font-size: var(--text-xs);
+                }
+                .text-sm {
+                    font-size: var(--text-sm);
+                }
+                .text-md {
+                    font-size: var(--text-base);
+                }
+                .text-lg {
+                    font-size: var(--text-lg);
+                }
+                .text-xl {
+                    font-size: var(--text-xl);
+                }
+            }
+
+            /* Small devices (portrait tablets and large phones, 600px and up) */
+            @media only screen and (min-width: 600px) {
+                body {
+                    background: oklch(90.1% 0.076 70.697);
+                }
+                .text-xs {
+                    font-size: var(--text-xs);
+                }
+                .text-sm {
+                    font-size: var(--text-sm);
+                }
+                .text-md {
+                    font-size: var(--text-base);
+                }
+                .text-lg {
+                    font-size: var(--text-lg);
+                }
+                .text-xl {
+                    font-size: var(--text-xl);
+                }
+            }
+
+            /* Medium devices (landscape tablets, 768px and up) */
+            @media only screen and (min-width: 768px) {
+                body {
+                    background: oklch(92.4% 0.12 95.746);
+                }
+                .text-xs {
+                    font-size: var(--text-xs);
+                }
+                .text-sm {
+                    font-size: var(--text-sm);
+                }
+                .text-md {
+                    font-size: var(--text-base);
+                }
+                .text-lg {
+                    font-size: var(--text-lg);
+                }
+                .text-xl {
+                    font-size: var(--text-xl);
+                }
+            }
+
+            /* Large devices (laptops/desktops, 992px and up) */
+            @media only screen and (min-width: 992px) {
+                body {
+                    background: oklch(92.5% 0.084 155.995);
+                }
+                .text-xs {
+                    font-size: var(--text-xs);
+                }
+                .text-sm {
+                    font-size: var(--text-sm);
+                }
+                .text-md {
+                    font-size: var(--text-base);
+                }
+                .text-lg {
+                    font-size: var(--text-lg);
+                }
+                .text-xl {
+                    font-size: var(--text-xl);
+                }
+            }
+
+            /* Extra large devices (large laptops and desktops, 1200px and up) */
+            @media only screen and (min-width: 1200px) {
+                body {
+                    background: oklch(88.2% 0.059 254.128);
+                }
+                .text-xs {
+                    font-size: var(--text-xs);
+                }
+                .text-sm {
+                    font-size: var(--text-sm);
+                }
+                .text-md {
+                    font-size: var(--text-base);
+                }
+                .text-lg {
+                    font-size: var(--text-lg);
+                }
+                .text-xl {
+                    font-size: var(--text-xl);
+                }
+            }
+
+        </style>
+    </head>
+    <body id="overlay">
+        <div class="container">
+            <div class="container-top">
+                <div class="container-top-navigation">
+                    <div id="navigation-parent" style="position: relative"></div>
+                </div>
+                <div>
+                    <div class="text-xs">xs</div>
+                    <div class="text-sm">sm</div>
+                    <div class="text-md">md</div>
+                    <div class="text-lg">lg</div>
+                    <div class="text-xl">xl</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
